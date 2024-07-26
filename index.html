@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+    <table class="calcu">
+      <tr>
+        <td colspan="4">
+          <input type="text" id="result" />
+        </td>
+      </tr>
+      <tr>
+        <!-- row1 -->
+        <div class="row1">
+          <td colspan="3">
+            <input type="button" value="AC" class="button-5" onclick="clr()" />
+          </td>
+          <td colspan="2">
+            <button class="back">
+              <img src="back.png" alt="" onclick="back()" />
+            </button>
+          </td>
+        </div>
+
+        <!-- <td>
+          <input type="button" value="%" class="button-5" onclick="dis('%')" />
+        </td>
+        <td>
+          <input type="button" value="🔊" class="button-5" onclick="play()" />
+        </td> -->
+      </tr>
+      <!-- 🔈 row2-->
+      <tr>
+        <td>
+          <input type="button" value="1" class="button-5" onclick="dis('1')" />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="2"
+            class="button-5"
+            onclick="dis('2')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="3"
+            class="button-5"
+            onclick="dis('3')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="➗"
+            class="button-5"
+            onclick="dis('/')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+      </tr>
+      <!-- row3 -->
+      <tr>
+        <td>
+          <input
+            type="button"
+            value="4"
+            class="button-5"
+            onclick="dis('4')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="5"
+            class="button-5"
+            onclick="dis('5')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="6"
+            class="button-5"
+            onclick="dis('6')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="✖️"
+            class="button-5"
+            onclick="dis('*')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <!-- row3 -->
+        <td>
+          <input
+            type="button"
+            value="7"
+            class="button-5"
+            onclick="dis('7')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="8"
+            class="button-5"
+            onclick="dis('8')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="9"
+            class="button-5"
+            onclick="dis('9')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="➖"
+            class="button-5"
+            onclick="dis('-')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <!-- row4 -->
+        <td>
+          <input
+            type="button"
+            value="0"
+            class="button-5"
+            onclick="dis('0')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="."
+            class="button-5"
+            onclick="dis('.')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="🟰"
+            class="button-5 equal"
+            onclick="solve()"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="➕"
+            class="button-5"
+            onclick="dis('+')"
+            onkeydown="myFunction(event)"
+          />
+        </td>
+      </tr>
+    </table>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

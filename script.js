@@ -32,7 +32,8 @@ function checkKey(e) {
     e.key == "+" ||
     e.key == "-" ||
     e.key == "*" ||
-    e.key == "/"
+    e.key == "/" ||
+    e.key == "."
   ) {
     display.value += e.key;
   }

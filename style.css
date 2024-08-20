@@ -5,7 +5,8 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(to right, rgb(199, 40, 0), rgb(255, 0, 200));
+  background: #D4D16A;
+  margin-top: calc(25vh - 4rem);
 }
 
 h1 {

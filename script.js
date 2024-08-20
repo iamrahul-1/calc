@@ -12,6 +12,8 @@ function clr() {
 function back() {
   display.value = display.value.slice(0, -1);
 }
+
+// on click
 window.addEventListener("keydown", checkKey);
 
 function checkKey(e) {
@@ -33,6 +35,9 @@ function checkKey(e) {
     e.key == "/"
   ) {
     display.value += e.key;
+  }
+  if(e.key === "Escape") {
+  clr();
   }
   if (e.key == "Backspace") {
     back();
